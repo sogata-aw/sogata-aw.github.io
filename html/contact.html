@@ -42,7 +42,7 @@
                     <label for="message">Écrivez votre message :</label>
                     <textarea name="message" id="message"></textarea>
                 </div>
-                <button class="for">Envoyer</button>
+                <button id="send" class="for">Envoyer</button>
             </div>
         </form>
     </main>
@@ -68,6 +68,18 @@ function sendEmail(event) {
         .catch(error => {
             console.error("Erreur:", error);
         });
+
+
 }
+
+let button = document.getElementById("send");
+
+    button.addEventListener("mousedown", function() {
+        this.classList.toggle("clicked"); // Changement au clic
+    });
+
+    button.addEventListener("mouseup", function() {
+        this.classList.toggle("clicked"); // Retour à la couleur initiale quand on relâche
+    });
 </script>
 </html>
