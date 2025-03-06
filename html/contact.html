@@ -16,7 +16,7 @@
         </nav>
     </header>
     <main>
-        <form action="">
+        <form id="contact-form" onsubmit="sendEmail(event)">
             <div>
                 <div class="input">
                     <div class="label">
@@ -51,4 +51,23 @@
         <p>0783592601<br>Maxime.rastelli@etu.univ-grenoble-alpes.fr</p>
     </footer>
 </body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+    emailjs.init("e2qjXesB6NV5LPlEo"); // Remplace par ton user ID EmailJS
+})();
+
+function sendEmail(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    emailjs.sendForm("service_t2sc4m5", "template_4b9arno", event.target)
+        .then(response => {
+            alert("E-mail envoyé avec succès !");
+            document.getElementById("contact-form").reset();
+        })
+        .catch(error => {
+            console.error("Erreur:", error);
+        });
+}
+</script>
 </html>
