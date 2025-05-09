@@ -1,0 +1,58 @@
+img.profile{
+    clip-path:ellipse(45% 40%);
+    padding-left: 10px;
+}
+
+img.logo{
+    width: 100px;
+    height: 100px;
+}
+
+img.icone{
+    
+    padding-left: 30px;
+}
+
+article.sec>img{
+    align-self: center;
+}
+
+section>div>div{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+
+section.projet{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+section.projet>div{
+    flex-direction: row;
+}
+
+
+li{
+    padding-top: 10px;
+}
+
+section:last-child{
+    padding-bottom: 50px;
+}
+
+section>p{
+    padding-left: 20px;
+}
+
+p.apropos{
+    width: 800px;
+}
+
+a.projet{
+    text-align: center;
+    width: 50%;
+}

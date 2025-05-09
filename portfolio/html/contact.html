@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Me contacter</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/default-style.css">
+    <link rel="stylesheet" href="../css/contact-style.css">
 </head>
 <body>
     <header>
@@ -71,15 +72,5 @@ function sendEmail(event) {
 
 
 }
-
-let button = document.getElementById("send");
-
-    button.addEventListener("mousedown", function() {
-        this.classList.toggle("clicked"); // Changement au clic
-    });
-
-    button.addEventListener("mouseup", function() {
-        this.classList.toggle("clicked"); // Retour à la couleur initiale quand on relâche
-    });
 </script>
 </html>

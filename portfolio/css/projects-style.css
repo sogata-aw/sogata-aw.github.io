@@ -1,0 +1,58 @@
+
+
+
+/* article */
+
+article.project_table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.project_table p{
+    text-align: center;
+    font-weight: bold;
+}
+
+article.project_table img{
+    width: 60%;
+    height: auto;
+}
+
+article#more_info{
+    width: 30%;
+    border: #000000 solid 2px;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 10px;
+}
+
+/* table */
+
+table.table_p{
+    width:60%;
+    border-spacing: 15px;
+    padding-bottom: 30px;
+}
+
+table.table_p td{
+    border: #000000 solid 2px;
+    width: 33%;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease-in-out;
+    transform-origin: center; /* Définit l'origine de l'agrandissement */
+}
+
+table.table_p td:hover{
+    transform: scale(1.2); /* Agrandissement sans déplacer */
+    background-color: #303436; /* Changement de couleur */
+    color: white;
+}
+
+#more_info{
+    visibility: hidden;
+}
+
+.main_projects{
+    display: flex;
+    flex-direction: row;
+}
