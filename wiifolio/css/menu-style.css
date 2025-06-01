@@ -108,7 +108,16 @@ body{
     color: gray;
 }
 
+.langage img{
+    width: 100px;
+}
+.java{
+    rotate: -15deg;
+}
 
+.postgres{
+    rotate: 15deg;
+}
 
 footer{
     position: fixed;

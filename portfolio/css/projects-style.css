@@ -20,10 +20,9 @@ article.project_table img{
 }
 
 article#more_info{
-    width: 30%;
+    width: 40%;
     border: #000000 solid 2px;
-    margin-bottom: auto;
-    margin-top: auto;
+    align-self: center;
     padding: 10px;
 }
 
@@ -50,6 +49,7 @@ table.table_p td:hover{
 
 #more_info{
     visibility: hidden;
+    font-size: 13px;
 }
 
 .main_projects{
