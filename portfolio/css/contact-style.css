@@ -21,7 +21,11 @@ div.input{
 
 input{
     width: 200px;
- 
+}
+
+label:not(#num)::after{
+    content: "*";
+    color: red;
 }
 
 textarea{
@@ -56,10 +60,18 @@ button.for:active{
 
 footer.petit{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: left;
     position: absolute;
     bottom: 0;
     width: 76%;
+}
+
+footer.petit div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 50px;
 }
 
 footer.petit h4{

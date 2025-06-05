@@ -209,14 +209,14 @@ const more_info_text = {
     "p9" : `<div>
                 <p>Objectif : Réaliser un site web utilisant une API publique</p>
                 <p>Nous avons réalisé un site web permettant de rechercher des amiibos par nom, séries, et personnage à l'aide de l'API AmiiboAPI. Lors de la recherche nous pouvons également filtrer le résultat. NOus avons également ajouté la possibilité de les ajouter aux favoris ou dans notre collection</p>
-                <p>Je me suis occupé de la réalisation des filtres et de la communication avec l'API</p>
+                <p>Je me suis occupé de la réalisation des filtres et de la communication avec l'API.</p>
                 <p>Lien du site :</p>
                 <p><a href="https://maxime-rastelli.github.io/html/">MyAmiiboList</a></p>
             </div>`,
     "p10" : `<div>
                 <p>Objectif : Réaliser un bot permettant d'automatiser des tâches répétitives</p>
                 <p>J'ai réalisé un bot permettant de faire des captcha, de créer des salons ou des rôles temporaires sur Discord en Python. Je me suis aidé de différentes tels que discorp.py permettant de faire le lien avec l'API officiel de Discord, pour les captchas, j'ai utilisé la librairie captcha.</p>
-                <p>Liens :<a href="https://github.com/sogata-aw/MultiSpoon"> MultiSpoon</a></p>
+                <p>Liens : <a href="https://github.com/sogata-aw/MultiSpoon"> MultiSpoon</a></p>
             </div>`
 
 };

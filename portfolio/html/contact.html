@@ -10,49 +10,55 @@
         <h1>Maxime RASTELLI</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projects.html">Projets Réalisés</a></li>
-                <li><a href="contact.html">Me contacter</a></li>
+                <li><a class="nav" href="index.html">Accueil</a></li>
+                <li><a class="nav" href="projects.html">Projets Réalisés</a></li>
+                <li><a class="nav" href="contact.html">Me contacter</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form id="contact-form" onsubmit="sendEmail(event)">
+        <form name="contact-form" id="contact-form" onsubmit="sendEmail(event)">
             <div>
                 <div class="input">
                     <div class="label">
                         <label for="name">Nom :</label>
-                        <input id="name" type="text" name="nom" placeholder="Votre nom">
+                        <input id="name" type="text" name="nom" placeholder="Votre nom" autofocus required>
                     </div>
                     <div class="label">
                         <label for="email">Adresse mail :</label>
-                        <input type="email" name="email" id="email" placeholder="Votre adresse mail">
+                        <input type="email" name="email" id="email" placeholder="Votre adresse mail" required>
                     </div>
                 </div>
                 <div class="input">
                     <div class="label">
                         <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
                     </div>
                     <div class="label">
-                        <label for="num">Votre numéro de téléphone :</label>
+                        <label for="num" id="num">Votre numéro de téléphone :</label>
                         <input type="tel" name="num" id="num" placeholder="Votre numéro de téléphone">
                     </div>
                 </div>
                 <div class="label">
                     <label for="message">Écrivez votre message :</label>
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" required></textarea>
                 </div>
                 <button id="send" class="for">Envoyer</button>
             </div>
         </form>
     </main>
     <footer class="petit">
-        <h4>Me contacter</h4>
-        <p>0783592601<br>Maxime.rastelli@etu.univ-grenoble-alpes.fr</p>
+        <div>
+            <h4>Me contacter</h4>
+            <p><b>Numéro de téléphone :</b> 07 83 59 26 01<br><b>Adresse Mail :</b> Maxime.rastelli@etu.univ-grenoble-alpes.fr</p>
+        </div>
+        <div>
+            <h4>Mes réseaux</h4>
+            <p><a href="https://www.linkedin.com/in/maxime-rastelli-19146b290/">LinkedIn</a><br><a href="https://github.com/sogata-aw">Github</a></p>
+        </div>
     </footer>
 </body>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
     (function() {
     emailjs.init("e2qjXesB6NV5LPlEo"); // Remplace par ton user ID EmailJS
@@ -62,15 +68,13 @@ function sendEmail(event) {
     event.preventDefault(); // Empêche le rechargement de la page
 
     emailjs.sendForm("service_t2sc4m5", "template_4b9arno", event.target)
-        .then(response => {
-            alert("E-mail envoyé avec succès !");
-            document.getElementById("contact-form").reset();
-        })
-        .catch(error => {
-            console.error("Erreur:", error);
-        });
-
-
+    .then(response => {
+        alert("E-mail envoyé avec succès !");
+        document.getElementById("contact-form").reset();
+    })
+    .catch(error => {
+        console.error("Erreur:", error);
+    });
 }
 </script>
 </html>

@@ -52,6 +52,11 @@ table.table_p td:hover{
     font-size: 13px;
 }
 
+#more_info div{
+    display: flex;
+    flex-direction: column;
+}
+
 .main_projects{
     display: flex;
     flex-direction: row;
