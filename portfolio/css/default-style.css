@@ -25,6 +25,7 @@ button{
 
 button>a{
     color: white;
+    text-decoration: none;
 }
 
 /* général */
@@ -80,7 +81,7 @@ header>h1{
     margin-left: 10px;
 }
 
-a.nav, a.projet, button a{
+a.nav, a.projet{
     text-decoration: none;
     color: black;
 }
