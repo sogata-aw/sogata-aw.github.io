@@ -80,7 +80,7 @@ header>h1{
     margin-left: 10px;
 }
 
-a.nav{
+a.nav, a.projet, button a{
     text-decoration: none;
     color: black;
 }
