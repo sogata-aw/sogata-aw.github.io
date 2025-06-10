@@ -52,6 +52,13 @@ const more_info_text = {
             </ul>
             <p>Nous avons créé une base de données sur le Titanic en SQL en commençant par récolter des informations utiles pour établir les relations, puis un schéma, et enfin en la réalisant sur un poste de travail. Nous avons aussi créé des tests pour vérifier si la base fonctionnait, ainsi que des requêtes spécifiques et un bilan.</p>
             <p>J'ai fait la partie création de la base de données et une partie des tests pour vérifier son bon fonctionnement.</p>
+            <p>Liens :<br></p>
+                <ul>
+                    <li><a href="../pdf/etape1_francoue.pdf">SAE 1.04 Etape 1</a></li>
+                    <li><a href="../pdf/etape2_francoue.pdf">SAE 1.04 Etape 2</a></li>
+                    <li><a href="../pdf/etape3_francoue.pdf">SAE 1.04 Etape 3</a></li>
+                    <li><a href="../pdf/bilan_S1_04_francoue.pdf">SAE 1.04 Bilan</a></li>
+                </ul>
         </div>`,
 
     "p4": `<div>
