@@ -100,6 +100,9 @@ nav a:hover{
 /* footer */
 
 footer{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
     position:relative;
     background-color: #A6A6A6;
     border-top: #8b8b8b solid 3px;
@@ -109,6 +112,17 @@ footer{
     margin: 0;
 }
 
-footer>h4,footer>p{
+footer>h4, footer>p{
     margin-left: 20px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+footer h4{
+    line-height: 0;
 }
