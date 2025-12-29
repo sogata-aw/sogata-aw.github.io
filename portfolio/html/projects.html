@@ -7,87 +7,59 @@
 </head>
 <body>
     <header>
-        <h1>Maxime RASTELLI</h1>
+        <h1>Maxime Rastelli - Développeur Informatique</h1>
         <nav>
             <ul>
-                <li><a class="nav" href="index.html">Accueil</a></li>
-                <li><a class="nav" href="projects.html">Projets Réalisés</a></li>
-                <li><a class="nav" href="contact.html">Me contacter</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="selected" href="projects.html">Projets Réalisés</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
             </ul>
         </nav>
     </header>
     <main class="main_projects">
-        <table class="table_p">
-            <tr>
-                <td>
-                    <article class="project_table" id="p1">
-                        <p>Réalisation d'un classement de dépêches</p>
-                        <img src="../img/projects/p1.PNG" alt="p1">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p2">
-                        <p>Installation d'un poste de travail pour le développement</p>
-                        <img src="../img/projects/carte.jpg" alt="p2">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p3">
-                        <p>Création d'une base de données</p>
-                        <img src="../img/projects/p3.PNG" alt="p3">
-                    </article>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <article class="project_table" id="p4">
-                        <p>Réalisation d'un site web institutionnel</p>
-                        <img src="../img/projects/p56.PNG" alt="p4">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p5">
-                        <p>Exploitation d'une base de données</p>
-                        <img src="../img/projects/p24.PNG" alt="p5">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p6">
-                        <p>Installation de services réseau</p>
-                        <img src="../img/projects/p6.png" alt="p6">
-                    </article>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <article class="project_table" id="p7">
-                        <p>Développement d'un logiciel de gestion pour les clubs de ski</p>
-                        <img src="../img/projects/p7.png" alt="p7">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p8">
-                        <p>Création et déploiement de services applicatifs</p>
-                        <img src="../img/projects/p8.png" alt="p7">
-                    </article>
-                </td>
-                <td>
-                    <article class="project_table" id="p9">
-                        <p>Réalisation d'un site web utilisant l'API AmiiboAPI</p>
-                        <img src="../img/projects/2.png" alt="p9">
-                    </article>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <article class="project_table" id="p10">
-                        <p>Développement d'un bot pour Discord</p>
-                        <img src="../img/projects/MultiSpoon (1).png" alt="p10">
-                    </article>
-                </td>
-            </tr>
-        </table>
-        <article id="more_info">
+        <div class="projects_grid">
+            <article class="project_table" id="p1">
+                <p>Réalisation d'un classement de dépêches</p>
+                <img src="../img/projects/p1.PNG" alt="p1">
+            </article>
+            <article class="project_table" id="p2">
+                <p>Installation d'un poste de travail pour le développement</p>
+                <img src="../img/projects/carte.jpg" alt="p2">
+            </article>
+            <article class="project_table" id="p3">
+                <p>Création d'une base de données</p>
+                <img src="../img/projects/p3.PNG" alt="p3">
+            </article>
+            <article class="project_table" id="p4">
+                <p>Réalisation d'un site web institutionnel</p>
+                <img src="../img/projects/p56.PNG" alt="p4">
+            </article>
+            <article class="project_table" id="p5">
+                <p>Exploitation d'une base de données</p>
+                <img src="../img/projects/p24.PNG" alt="p5">
+            </article>
+            <article class="project_table" id="p6">
+                <p>Installation de services réseau</p>
+                <img src="../img/projects/p6.png" alt="p6">
+            </article>
+            <article class="project_table" id="p7">
+                <p>Développement d'un logiciel de gestion pour les clubs de ski</p>
+                <img src="../img/projects/p7.png" alt="p7">
+            </article>
+            <article class="project_table" id="p8">
+                <p>Création et déploiement de services applicatifs</p>
+                <img src="../img/projects/p8.png" alt="p7">
+            </article>
+            <article class="project_table" id="p9">
+                <p>Réalisation d'un site web utilisant l'API AmiiboAPI</p>
+                <img src="../img/projects/2.png" alt="p9">
+            </article>
+            <article class="project_table" id="p10">
+                <p>Développement d'un bot pour Discord</p>
+                <img src="../img/projects/MultiSpoon (1).png" alt="p10">
+            </article>
+        </div>
+        <article id="more_info" class="hidden">
         </article>
     </main>
     <footer>
@@ -102,5 +74,4 @@
     </footer>
 </body>
 <script type="module" src="../js/projects.js"></script>
-<script></script>
 </html>

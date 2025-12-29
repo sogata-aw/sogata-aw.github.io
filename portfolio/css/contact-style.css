@@ -1,79 +1,114 @@
-/* div */
-
-form>div{
-    flex-direction: column;
-    margin-left: 20px;
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-div.label{
-    flex-direction: column;
-}
-
-div.label:nth-of-type(2){
-    padding-left: 6.2em;
-}
-
-/* input */
-
-div.input{
-    padding-bottom: 15px;
-}
-
-input{
-    width: 200px;
-}
-
-label:not(#num)::after{
-    content: "*";
-    color: red;
-}
-
-textarea{
-    width: 500;
-    height: 250;
-    resize: none;
-}
-
-/* button */
-
-button.for{
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 80px;
-    background-color: #2c88d9;
-    color: white;
-    height: 30px;
-    border: #6eb1eb solid 3px;
-}
-
-button.for:active{
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 80px;
-    background-color: #1a5a99;
-    border: #0f3b66 solid 3px;
-    color: white;
-    height: 30px;
-}
-
-/* footer */
-
-footer.petit{
+/* ===== FORMULAIRE ===== */
+main {
     display: flex;
-    flex-direction: row;
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    width: 76%;
+    justify-content: center;
 }
 
-footer.petit div{
+form {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 14px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* GROUPES */
+.input {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.label {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 50px;
+    flex: 1;
 }
 
-footer.petit h4{
-    line-height: 0;
+/* LABELS */
+label {
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+/* INPUTS & TEXTAREA */
+input,
+textarea {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: #c9d1d9;
+    font-family: inherit;
+
+    box-sizing: border-box;
+
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s ease forwards;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 2px rgba(88,166,255,0.2);
+}
+
+form input:nth-child(1) { animation-delay: 0.1s; }
+form input:nth-child(2) { animation-delay: 0.1s; }
+form textarea { animation-delay: 0.1s; }
+
+/* BOUTON */
+button {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .input {
+        flex-direction: column;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;   /* centre verticalement */
+    align-items: flex-start;   /* empêche l’étirement */
+    padding-top: 3rem;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
 }

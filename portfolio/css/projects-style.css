@@ -1,63 +1,61 @@
 
 
-
-/* article */
-
-article.project_table{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ===== GRILLE PROJETS ===== */
+.projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 
-article.project_table p{
+/* ===== CARTE ===== */
+.project_table {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 14px;
+    padding: 1rem;
     text-align: center;
-    font-weight: bold;
-}
 
-article.project_table img{
-    width: 60%;
-    height: auto;
-}
-
-article#more_info{
-    width: 40%;
-    border: #000000 solid 2px;
-    align-self: center;
-    padding: 10px;
-}
-
-/* table */
-
-table.table_p{
-    width:60%;
-    border-spacing: 15px;
-    padding-bottom: 30px;
-}
-
-table.table_p td{
-    border: #000000 solid 2px;
-    width: 33%;
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease-in-out;
-    transform-origin: center; /* Définit l'origine de l'agrandissement */
-}
-
-table.table_p td:hover{
-    transform: scale(1.2); /* Agrandissement sans déplacer */
-    background-color: #303436; /* Changement de couleur */
-    color: white;
-}
-
-#more_info{
-    visibility: hidden;
-    font-size: 13px;
-}
-
-#more_info div{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-left 0.3s ease;
+    border-left: 3px solid transparent;
 }
 
-.main_projects{
-    display: flex;
-    flex-direction: row;
+.project_table:hover {
+    transform: translateX(0.5rem);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-left: 3px solid #3fb950; /* vert terminal */
+}
+
+/* TITRE */
+.project_table p {
+    color: #58a6ff;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* IMAGE */
+.project_table img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.visible{
+    display: block;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgba(88,166,255,0.05);
+}
+
+.hidden{
+    display: none;
 }

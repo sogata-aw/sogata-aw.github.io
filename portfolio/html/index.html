@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -5,175 +6,170 @@
     <link rel="stylesheet" href="../css/default-style.css">
     <link rel="stylesheet" href="../css/index-style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Maxime RASTELLI</h1>
-        <nav>
-            <ul>
-                <li><a class="nav" href="index.html">Accueil</a></li>
-                <li><a class="nav" href="projects.html">Projets Réalisés</a></li>
-                <li><a class="nav" href="contact.html">Me contacter</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article class="secs" class="index">
-            <section>
-                <h2>À propos de moi</h2>
-                <p class="apropos">J'ai fais mathématiques, NSI et physique chimie en 1ère et mathématiques, NSI et maths expertes en terminale. Je suis actuellement un étudiant en 2ème année de BUT informatique à l'institut universitaire de technologie 2 de Grenoble en Auvergne-Rhônes-Alpes.</p>
-            </section>
-            <img class="profile" src="../img/moi.jpeg" alt="Moi">
-        </article>
+<header>
+    <h1>Maxime Rastelli - Développeur Informatique</h1>
+    <nav>
+        <ul>
+            <li><a class="selected" href="index.html">Accueil</a></li>
+            <li><a href="projects.html">Projets Réalisés</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="layout">
+    <!-- ===== PROFIL ===== -->
+    <aside class="informations">
+        <div class="profile-box">
+            <img class="profile" src="../img/moi.jpeg" alt="Photo de Maxime Rastelli">
+
+            <div class="links">
+                <a href="#">📄 CV</a>
+                <a href="#">🔗 LinkedIn</a>
+                <a href="https://github.com/sogata-aw">💻 GitHub</a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="content">
+        <section>
+            <h2>À propos de moi</h2>
+            <p class="apropos">
+                <!-- ton texte -->
+            </p>
+        </section>
+
+        <!-- ===== PROJETS ===== -->
         <section class="projet index">
-            <h2>Mes projets</h2>
-            <div>
-                <div>  
-                    
-                        <img class="logo" src="../img/news.png" alt="news">
-                        <a href="projects.html#p1" class="projet">Réalisation d'un classement de dépêches</a>
-                    
+            <h2>Projets récents</h2>
+
+            <div class="projet-list">
+                <div class="projet-item">
+                    <img class="logo" src="../img/news.png" alt="news">
+                    <a href="projects.html#p1">Classement de dépêches</a>
                 </div>
-                <div>
-                 <img class="logo" src="../img/pc.png" alt="pc">
-                    <a href="projects.html#p2" class="projet">Installation d'un poste de travail pour le développement</a>
+
+                <div class="projet-item">
+                    <img class="logo" src="../img/pc.png" alt="pc">
+                    <a href="projects.html#p2">Installation d’un poste de travail</a>
                 </div>
-                <div>
-                 <img class="logo" src="../img/bd.png" alt="bd">
-                 <a href="projects.html#p3" class="projet">Création d'une base de données</a>
+
+                <div class="projet-item">
+                    <img class="logo" src="../img/bd.png" alt="bd">
+                    <a href="projects.html#p3">Création d’une base de données</a>
                 </div>
             </div>
-            <button><a href="./projects.html">En savoir plus</a></button>
+
+            <button><a href="projects.html">En savoir plus</a></button>
         </section>
-        <article class="sec index">
+
+            <!-- ===== DIPLÔMES ===== -->
+        <article class="sec">
             <section>
                 <h2>Mes diplômes</h2>
-                <p><ul>
-                    <li>Etudes supérieurs</li>
+                <ul>
+                    <li>Études supérieures</li>
                     <li>Collège et lycée
                         <ul>
-                            <li>Baccalauréat Générale</li>
+                            <li>Baccalauréat Général</li>
                             <li>Brevet des collèges</li>
                         </ul>
                     </li>
-                </ul></p>
+                </ul>
             </section>
-            <img class="icone" src="../img/diplome.png" alt="diplome" width="125">
         </article>
+
+        <!-- ===== LANGAGES ===== -->
         <section>
-            <h2>Langages informatique</h2>
+            <h2>Langages informatiques</h2>
             <div class="programmation">
-                <div>
-                    <img class="logo" src="../img/langage/python-original.svg" alt="logo java">
-                    <p>python</p>
-                </div>
-                <div>
-                 <img class="logo" src="../img/langage/java-original.svg" alt="logo python">
-                    <p>java</p>
-                </div>
-                <div>
-                 <img class="logo" src="../img/langage/postgresql-original.svg" alt="logo postgresql">
-                    <p>postgresql</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/html5-original.svg" alt="logo html">
-                    <p>html</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/css3-original.svg" alt="logo css">
-                    <p>css</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/c-original.svg" alt="logo css">
-                    <p>c</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/cplusplus-original.svg" alt="logo css">
-                    <p>c++</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/csharp-original.svg" alt="logo css">
-                    <p>csharp</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/javascript-original.svg" alt="logo css">
-                    <p>javascript</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/r-original.svg" alt="logo css">
-                    <p>r</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/php-original.svg" alt="logo css">
-                    <p>php</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/langage/sqlite-original.svg" alt="logo css">
-                    <p>sqlite</p>
-                </div>
+                <div><img class="logo" src="../img/langage/python-original.svg"><p>Python</p></div>
+                <div><img class="logo" src="../img/langage/php-original.svg"><p>PHP</p></div>
+                <div><img class="logo" src="../img/langage/javascript-original.svg"><p>JavaScript</p></div>
+                <div><img class="logo" src="../img/langage/java-original.svg"><p>Java</p></div>
+                <div><img class="logo" src="../img/langage/postgresql-original.svg"><p>PostgreSQL</p></div>
+                <div><img class="logo" src="../img/langage/html5-original.svg"><p>HTML</p></div>
+                <div><img class="logo" src="../img/langage/css3-original.svg"><p>CSS</p></div>
+                <div><img class="logo" src="../img/langage/c-original.svg"><p>C</p></div>
+                <div><img class="logo" src="../img/langage/cplusplus-original.svg"><p>C++</p></div>
+                <div><img class="logo" src="../img/langage/csharp-original.svg"><p>C#</p></div>
+                <div><img class="logo" src="../img/langage/r-original.svg"><p>R</p></div>
+                <div><img class="logo" src="../img/langage/sqlite-original.svg"><p>SQLite</p></div>
             </div>
         </section>
+
+        <!-- ===== SOFT SKILLS ===== -->
         <section>
-            <h2>Soft-skills</h2>
-            <div>
-                <div>
-                    <img class="logo" src="../img/crea.png" alt="creatif">
-                    <p>Créatif</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/resilient.png" alt="resilience">
-                    <p>Résilient</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/ecoute.png" alt="ecouter">
-                    <p>Être à l'écoute</p>
-                </div>
-                <div>
-                    <img class="logo" src="../img/curieux.png" alt="curieux">
-                    <p>Curieux</p>
-                </div>
+            <h2>Soft skills</h2>
+            <div class="soft-skills">
+                <div><img class="logo" src="../img/crea.png"><p>Créatif</p></div>
+                <div><img class="logo" src="../img/resilient.png"><p>Résilient</p></div>
+                <div><img class="logo" src="../img/ecoute.png"><p>À l’écoute</p></div>
+                <div><img class="logo" src="../img/curieux.png"><p>Curieux</p></div>
             </div>
         </section>
+
+        <!-- ===== EXPÉRIENCES ===== -->
         <article class="sec">
-            <section>
+            <section class="experiences">
                 <h2>Expériences professionnelles</h2>
-                <p>Encadrant dans un club de ski</p>
+
+                <div class="experience">
+                    <span class="title">Encadrant dans un club de ski</span>
+                    <span class="details">Sou des écoles – Saint-Egrève | Déc. 2024 – Mars 2025</span>
+                </div>
+
+                <div class="experience">
+                    <span class="title">Stagiaire chez Creative VR 3D</span>
+                    <span class="details">Cannes | Avril 2025 – Juin 2025</span>
+                </div>
             </section>
-            <img class="icone" src="../img/work.png" alt="work" width="100">
-        </article class="index">
+        </article>
+
+        <!-- ===== INTÉRÊTS ===== -->
         <article class="sec">
             <section>
-                <h2>Mes centres d'intérêts et activités</h2>
-                <p>
-                    <ul>
-                        <li>Jeux vidéos</li>
+                <h2>Centres d’intérêts</h2>
+                <ul>
+                    <li>Jeux vidéo
                         <ul>
                             <li>Splatoon</li>
-                            <li>The legend of Zelda</li>
-                            <li>Narrow one</li>
+                            <li>The Legend of Zelda</li>
+                            <li>Narrow One</li>
                         </ul>
-                        <li>Mangas</li>
+                    </li>
+                    <li>Mangas
                         <ul>
-                            <li>Sword art online</li>
+                            <li>Sword Art Online</li>
                             <li>Gunnm</li>
                             <li>Accel World</li>
                         </ul>
-                        <li>Taekwondo (ceinture bleue)</li>
-                    </ul>
-                </p>
+                    </li>
+                    <li>Taekwondo (ceinture bleue)</li>
+                </ul>
             </section>
-            <img class="icone" src="../img/passe.png" alt="passe-temps" width="100">
         </article>
-        
-    </main>
-    <footer>
-        <div>
-            <h4>Me contacter</h4>
-            <p><b>Numéro de téléphone :</b> 07 83 59 26 01<br><b>Adresse Mail :</b> Maxime.rastelli@etu.univ-grenoble-alpes.fr</p>
-        </div>
-        <div>
-            <h4>Mes réseaux</h4>
-            <p><a href="https://www.linkedin.com/in/maxime-rastelli-19146b290/">LinkedIn</a><br><a href="https://github.com/sogata-aw">Github</a></p>
-        </div>
-    </footer>
+    </div>
+</main>
+
+<footer>
+    <div>
+        <h4>Me contacter</h4>
+        <p>
+            <strong>Téléphone :</strong> 07 83 59 26 01<br>
+            <strong>Email :</strong> maxime.rastelli@etu.univ-grenoble-alpes.fr
+        </p>
+    </div>
+    <div>
+        <h4>Mes réseaux</h4>
+        <p>
+            <a href="https://www.linkedin.com/">LinkedIn</a><br>
+            <a href="https://github.com/sogata-aw">GitHub</a>
+        </p>
+    </div>
+</footer>
+<script type="module" src="../js/index.js"></script>
 </body>
 </html>
