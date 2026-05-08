@@ -3,7 +3,9 @@
  */
 export const view = {
 
-  articles: document.querySelectorAll(".project_table"),
+  projects : document.getElementById("projects_grid"),
+
+  articles: null,
 
   articleMoreInfo: document.getElementById("more_info"),
 
