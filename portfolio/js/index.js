@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = async () => {
     const h2s = document.querySelectorAll("h2");
 
     h2s.forEach(h2 => {
@@ -26,4 +26,22 @@ window.onload = () => {
 
         typingStep();
     });
+
+    const projectsInfo = await fetch("../projects.json").then(async (data) => {
+        const json = await data.json();
+        return json.slice(-3);
+    });
+
+    const template = document.getElementById("project");
+
+    const projectsDiv = document.querySelector(".projet-list");
+
+    projectsInfo.forEach(project => {
+        const clone = document.importNode(template.content, true);
+        const a = clone.querySelector("a");
+        a.href = "projects.html#p" + project.id;
+        a.innerHTML = project.nom;
+
+        projectsDiv.appendChild(clone);
+    })
 };
