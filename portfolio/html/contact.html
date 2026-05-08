@@ -57,24 +57,25 @@
             <p><a href="https://www.linkedin.com/in/maxime-rastelli-19146b290/">LinkedIn</a><br><a href="https://github.com/sogata-aw">Github</a></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../js/view_contact.js"></script>
+    <script>
+        (function() {
+        emailjs.init(decodeToken("V2xSS2VHRnNhR3hqTUVreVZHeFpNVlJHUW5OU1Z6Zzk="));
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+
+        emailjs.sendForm(decodeToken("WXpKV2VXUnRiR3BhVmprd1RXNU9hazVITURFPQ=="), decodeToken("WkVkV2RHTkhlR2hrUjFabVRrZEpOVmxZU25WaWR6MDk="), event.target)
+        .then(response => {
+            alert("E-mail envoyé avec succès !");
+            document.getElementById("contact-form").reset();
+        })
+        .catch(error => {
+            console.error("Erreur:", error);
+        });
+    }
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-    (function() {
-    emailjs.init("e2qjXesB6NV5LPlEo"); // Remplace par ton user ID EmailJS
-})();
-
-function sendEmail(event) {
-    event.preventDefault(); // Empêche le rechargement de la page
-
-    emailjs.sendForm("service_t2sc4m5", "template_4b9arno", event.target)
-    .then(response => {
-        alert("E-mail envoyé avec succès !");
-        document.getElementById("contact-form").reset();
-    })
-    .catch(error => {
-        console.error("Erreur:", error);
-    });
-}
-</script>
 </html>

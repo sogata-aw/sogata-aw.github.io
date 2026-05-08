@@ -27,17 +27,17 @@
     {
         "id" : 6,
         "nom" : "Installation de services réseau",
-        "img" : "../img/projects/p6.png"
+        "img" : "../img/projects/debian.png"
     },
     {
         "id" : 7,
         "nom" : "Développement d'un logiciel de gestion pour les clubs de ski",
-        "img" : "../img/projects/p7.png"
+        "img" : "../img/projects/MONTski.svg"
     },
     {
         "id" : 8,
         "nom" : "Création et déploiement de services applicatifs",
-        "img" : "../img/projects/p8.png"
+        "img" : "../img/projects/logo.png"
     },
     {
         "id" : 9,
@@ -47,6 +47,6 @@
     {
         "id" : 10,
         "nom" : "Développement d'un bot pour Discord",
-        "img" : "../img/projects/MultiSpoon (1).png"
+        "img" : "../img/projects/MultiSpoon.png"
     }
 ]
