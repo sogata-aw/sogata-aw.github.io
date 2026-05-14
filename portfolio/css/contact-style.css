@@ -39,6 +39,7 @@ form {
 
 /* LABELS */
 label {
+    width: 110%;
     margin-bottom: 0.4rem;
     font-size: 0.85rem;
     color: #8b949e;

@@ -59,3 +59,18 @@
 .hidden{
     display: none;
 }
+
+#more_info div:first-child p:first-child, #objectif{
+    font-weight: bold;
+}
+
+#links_container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+ul {
+  margin-top: 2rem;
+  margin-left: -3rem;
+}
