@@ -154,6 +154,7 @@ li {
 .experience .title {
     color: #3fb950;
     font-weight: bold;
+    width: 40%;
 }
 
 .experience .details {
@@ -171,4 +172,14 @@ li {
     color: #0d1117;
     background: linear-gradient(135deg, #58a6ff, #3fb950);
     text-decoration: none;
+}
+
+.projet.index {
+    display: flex;
+    flex-direction: column;
+}
+
+#more{
+    display: block;
+    margin-left: auto;
 }

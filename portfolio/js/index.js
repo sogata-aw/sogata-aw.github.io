@@ -40,7 +40,8 @@ window.onload = async () => {
         const clone = document.importNode(template.content, true);
         const a = clone.querySelector("a");
         a.href = "projects.html#p" + project.id;
-        a.innerHTML = project.nom;
+        const div = a.querySelector("div");
+        div.innerHTML = project.nom;
 
         projectsDiv.appendChild(clone);
     })
